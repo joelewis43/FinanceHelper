@@ -5,18 +5,6 @@ interface PageProps {
   // You can add common props here if needed, e.g., user authentication info
 }
 
-// Spending Page
-const SpendingPage: React.FC<PageProps> = () => {
-  return (
-    <div className="App">
-      <h2>Spending</h2>
-      {/* Content specific to the Spending page */}
-      <p>Track your expenses here.</p>
-      {/* Add more spending-related components and logic */}
-    </div>
-  );
-};
-
 // Budget Page
 const BudgetPage: React.FC<PageProps> = () => {
   return (
@@ -41,4 +29,16 @@ const InvestmentsPage: React.FC<PageProps> = () => {
   );
 };
 
-export { SpendingPage, BudgetPage, InvestmentsPage }; // Export the pages
+// Error Page
+const ErrorPage: React.FC<PageProps> = () => {
+  return (
+    <div className="App">
+      <h2>Error</h2>
+      <p>Add error details here.</p>
+    </div>
+  );
+};
+
+
+export { BudgetPage, InvestmentsPage, ErrorPage };
+export { type PageProps };
