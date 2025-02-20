@@ -12,7 +12,7 @@ npm install
 
 #### Run locally
 ```bash
-npm run dev
+npm run start
 ```
 
 #### Build (do this before commiting to check for errors)
